@@ -1,3 +1,59 @@
+<header class="navbar">
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg" alt="VN Flag" class="flag" />
+    <span>Hello-Vietnam</span>
+  </div>
+  <nav>
+    <a href="#">Khám phá</a>
+    <a href="#">Cẩm nang</a>
+    <a href="#">Diễn đàn</a>
+  </nav>
+  <div class="actions">
+    <button class="btn primary">Tải App</button>
+    <button class="icon-btn">🔍</button>
+  </div>
+</header>
+
+<section class="search">
+  <input type="text" placeholder="Tìm kiếm địa điểm du lịch, ẩm thực" />
+  <button class="btn primary">Tìm kiếm</button>
+</section>
+
+<section class="places">
+  <h2>Địa điểm phổ biến</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://i.ibb.co/j3z9gKq/ha-long.jpg" alt="Vịnh Hạ Long">
+      <p>Vịnh Hạ Long</p>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/zbncvgD/hoi-an.jpg" alt="Hội An">
+      <p>Hội An</p>
+    </div>
+    <div class="card">
+      <img src="https://i.ibb.co/6vNkn03/can-tho.jpg" alt="Cần Thơ">
+      <p>Cần Thơ</p>
+    </div>
+  </div>
+</section>
+
+<section class="suggest">
+  <h3>Gợi ý thông minh</h3>
+  <div class="suggest-content">
+    <div class="suggest-item">
+      <img src="https://i.ibb.co/zbncvgD/hoi-an.jpg" alt="Nhà cổ Bình Thủy">
+      <p>Khám phá Nhà Cổ Bình Thủy – Cần Thơ</p>
+    </div>
+    <div class="suggest-item">
+      <button class="btn secondary">Trải nghiệm Chợ Nổi Cái Răng VR</button>
+    </div>
+    <div class="suggest-item">
+      <p>Hỏi đáp AI: Gợi ý món ăn truyền thống Cần Thơ</p>
+    </div>
+  </div>
+</section>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
 :root {
   --primary: #3B82F6;   /* xanh dương nhẹ */
   --bg: #f9fafb;
@@ -138,74 +194,3 @@ body {
     flex: 1;
   }
 }
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello-Vietnam</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Header -->
-  <header class="navbar">
-    <div class="logo">
-      <img src="images/icon-vn.png" alt="VN Flag" class="flag" />
-      <span>Hello-Vietnam</span>
-    </div>
-    <nav>
-      <a href="#">Khám phá</a>
-      <a href="#">Cẩm nang</a>
-      <a href="#">Diễn đàn</a>
-    </nav>
-    <div class="actions">
-      <button class="btn primary">Tải App</button>
-      <button class="icon-btn">🔍</button>
-    </div>
-  </header>
-
-  <!-- Search -->
-  <section class="search">
-    <input type="text" placeholder="Tìm kiếm địa điểm du lịch, ẩm thực" />
-    <button class="btn primary">Tìm kiếm</button>
-  </section>
-
-  <!-- Popular places -->
-  <section class="places">
-    <h2>Địa điểm phổ biến</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="images/vinh-ha-long.jpg" alt="Vịnh Hạ Long">
-        <p>Vịnh Hạ Long</p>
-      </div>
-      <div class="card">
-        <img src="images/hoi-an.jpg" alt="Hội An">
-        <p>Hội An</p>
-      </div>
-      <div class="card">
-        <img src="images/can-tho.jpg" alt="Cần Thơ">
-        <p>Cần Thơ</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Smart suggestion -->
-  <section class="suggest">
-    <h3>Gợi ý thông minh</h3>
-    <div class="suggest-content">
-      <div class="suggest-item">
-        <img src="images/hoi-an.jpg" alt="Nhà cổ Bình Thủy">
-        <p>Khám phá Nhà Cổ Bình Thủy – Cần Thơ</p>
-      </div>
-      <div class="suggest-item">
-        <button class="btn secondary">Trải nghiệm Chợ Nổi Cái Răng VR</button>
-      </div>
-      <div class="suggest-item">
-        <p>Hỏi đáp AI: Gợi ý món ăn truyền thống Cần Thơ</p>
-      </div>
-    </div>
-  </section>
-
-</body>
-</html>
