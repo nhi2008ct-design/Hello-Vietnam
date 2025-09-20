@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Du lịch Cần Thơ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #0284c7; color: white; padding: 15px; text-align: center; }
+    nav { background: #0369a1; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .banner { background: url('https://upload.wikimedia.org/wikipedia/commons/7/74/Ben_Ninh_Kieu_Can_Tho.jpg') no-repeat center/cover;
+              color: white; text-align: center; padding: 100px 20px; }
+    .banner h1 { font-size: 50px; text-shadow: 2px 2px 5px black; }
+    .container { padding: 20px; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 15px; margin: 15px 0;
+            display: flex; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card img { width: 200px; border-radius: 10px; margin-right: 20px; }
+    .card h3 { margin: 0; }
+    footer { background: #0369a1; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    .btn { display: inline-block; padding: 8px 12px; background: #0284c7; color: white;
+           text-decoration: none; border-radius: 5px; margin-top: 10px; }
+    .btn:hover { background: #0369a1; }
+    .details { display: none; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Du lịch Cần Thơ - Tây Đô Miền Sông Nước</h2>
+  </header>
+
+  <nav>
+    <a href="#">Trang chủ</a>
+    <a href="#diem-den">Điểm đến</a>
+    <a href="#am-thuc">Ẩm thực</a>
+    <a href="#lien-he">Liên hệ</a>
+  </nav>
+
+  <div class="banner">
+    <h1>Khám phá Cần Thơ</h1>
+    <p>Vùng đất gắn liền với sông nước, chợ nổi và con người hiền hòa.</p>
+  </div>
+
+  <div class="container" id="diem-den">
+    <h2>Điểm đến nổi bật</h2>
+
+    <!-- Bến Ninh Kiều -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Ben_Ninh_Kieu_Can_Tho.jpg" alt="Bến Ninh Kiều">
+      <div>
+        <h3>Bến Ninh Kiều</h3>
+        <p>Biểu tượng của Cần Thơ, nơi gắn liền với sông Hậu hiền hòa.</p>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('ninhkieu')">Xem chi tiết</a>
+        <div id="ninhkieu" class="details">
+          <p><b>Lịch sử:</b> Hình thành từ thế kỷ 19, là bến sông quan trọng của thành phố.</p>
+          <p><b>Điểm đặc biệt:</b> Công viên rộng, cảnh đẹp về đêm, du thuyền trên sông Hậu.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chợ nổi Cái Răng -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Cai_Rang_Floating_Market_-_Can_Tho_2019.jpg" alt="Chợ nổi Cái Răng">
+      <div>
+        <h3>Chợ nổi Cái Răng</h3>
+        <p>Khu chợ độc đáo trên sông, nhộn nhịp từ sáng sớm.</p>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('cairang')">Xem chi tiết</a>
+        <div id="cairang" class="details">
+          <p><b>Lịch sử:</b> Xuất hiện từ hơn 100 năm trước, là trung tâm buôn bán nông sản.</p>
+          <p><b>Điểm đặc biệt:</b> Buôn bán trên ghe, cảnh sông nước tấp nập, trải nghiệm ẩm thực đặc sản.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nhà cổ Bình Thủy -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Nha_co_Binh_Thuy.jpg" alt="Nhà cổ Bình Thủy">
+      <div>
+        <h3>Nhà cổ Bình Thủy</h3>
+        <p>Ngôi nhà mang kiến trúc Đông - Tây giao hòa, gần 150 năm tuổi.</p>
+        <a href="javascript:void(0)" class="btn" onclick="toggleDetails('binhthuy')">Xem chi tiết</a>
+        <div id="binhthuy" class="details">
+          <p><b>Lịch sử:</b> Xây dựng năm 1870, thuộc dòng họ Dương.</p>
+          <p><b>Điểm đặc biệt:</b> Kiến trúc Pháp cổ kết hợp truyền thống Việt, nhiều phim từng quay tại đây.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="lien-he">
+    <p>&copy; 2025 Du lịch Cần Thơ | Liên hệ: dulichcantho@gmail.com</p>
+  </footer>
+
+  <script>
+    function toggleDetails(id) {
+      var details = document.getElementById(id);
+      if (details.style.display === "block") {
+        details.style.display = "none";
+      } else {
+        details.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>
